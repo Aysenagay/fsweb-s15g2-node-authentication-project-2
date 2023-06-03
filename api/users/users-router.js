@@ -38,7 +38,7 @@ router.get("/", sinirli, (req, res, next) => { // hazır
       "user_id": 1,
       "username": "bob"
     }
-  ]
+  ]//
  */
 router.get("/:user_id", sinirli, sadece('admin'), (req, res, next) => { // hazır
   Users.idyeGoreBul(req.params.user_id)
